@@ -5,6 +5,12 @@
 '''
 
 class Unit():
-    def __init__(self, data, operation):
+
+    def __init__(self):
+        pass
+
+    def __init__(self, dimension, data, operation, relations):
+        self.dimension = dimension
         self.data = data
         self.operation = operation
+        self.relations = relations
