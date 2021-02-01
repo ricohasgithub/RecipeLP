@@ -14,3 +14,6 @@ class Unit():
         self.data = data
         self.operation = operation
         self.relations = relations
+
+    def compare(self, other):
+        pass
