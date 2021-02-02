@@ -1,5 +1,5 @@
 
-import utils.models.naive_sequence
+from utils.models.naive_sequence import Naive_Sequence
 
 class Heuristic_Sequence(Naive_Sequence):
 
@@ -7,11 +7,11 @@ class Heuristic_Sequence(Naive_Sequence):
         super().__init__()
         
     def __init__(self, sequence):
-        super().__init__(self, sequence)
+        super().__init__(sequence)
 
     def tokenize(self):
-        naive_tokens = super().naive_tokensize()
-        pass
+        naive_tokens = super().naive_tokenize()
+        return naive_tokens
 
     def train(self):
         pass

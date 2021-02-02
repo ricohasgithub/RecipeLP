@@ -1,5 +1,5 @@
 
-import utils.abstract.unit
+from utils.abstract.unit import Unit
 
 class Data_Unit(Unit):
 
