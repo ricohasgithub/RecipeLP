@@ -24,4 +24,10 @@ class Naive_Sequence(Strategem):
             for j in range(len(lists)): 
                 lists[j] = lists[j] + [new] 
             lists = orig + lists 
-        return lists 
+        return lists
+
+    def context_tokenize(self):
+        pass
+
+    def local_context_tokenize(self):
+        pass
