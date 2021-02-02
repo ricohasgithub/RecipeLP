@@ -1,13 +1,11 @@
 
-from utils.models.naive_sequence import Naive_Sequence
+from utils.abstract.sequences.naive_sequence import Naive_Sequence
 
 class Heuristic_Sequence(Naive_Sequence):
-
-    def __init__(self):
-        super().__init__()
         
-    def __init__(self, sequence):
+    def __init__(self, sequence, model):
         super().__init__(sequence)
+        self.model = model
 
     def tokenize(self):
         self.tokens = super().naive_tokenize()

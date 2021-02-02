@@ -5,10 +5,7 @@
 '''
 
 class Token():
-
-    def __init__(self):
-        pass
-
+    
     def __init__(self, data):
         self.data = data
         self.dimensions = len(data)
