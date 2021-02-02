@@ -12,7 +12,7 @@ class Naive_Sequence(Stratagem):
     def __init__(self, sequence, start = 0):
         self.num = start
         self.sequence = sequence
-        self.tokens = self.naive_tokenize()
+        self.tokens = []
 
     # Iterator methods
     def __iter__(self):
@@ -36,7 +36,7 @@ class Naive_Sequence(Stratagem):
             for j in range(len(lists)): 
                 lists[j] = lists[j] + [new] 
             lists = orig + lists 
-        return lists
+        self.tokens = lists
 
     def context_tokenize(self):
         pass
