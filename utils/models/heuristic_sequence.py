@@ -1,14 +1,16 @@
 
-import utils.abstract.stratagem
+import utils.models.naive_sequence
 
-class Heuristic_Sequence(Stratagem):
+class Heuristic_Sequence(Naive_Sequence):
 
     def __init__(self):
         super().__init__()
         
     def __init__(self, sequence):
-        self.sequence = sequence
-        self.traits = []
+        super().__init__()
+
+    def tokenize(self):
+        pass
 
     def train(self):
         pass
