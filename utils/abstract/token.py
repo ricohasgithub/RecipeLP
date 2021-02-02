@@ -9,11 +9,9 @@ class Token():
     def __init__(self):
         pass
 
-    def __init__(self, dimension, data, operation, relations):
-        self.dimension = dimension
+    def __init__(self, data):
         self.data = data
-        self.operation = operation
-        self.relations = relations
+        self.dimensions = len(data)
 
     def compare(self, other):
         pass
@@ -24,3 +22,6 @@ class Token():
 
     def token_compare(self):
         pass
+
+    def __str__(self):
+        return ("Token of dimension: " + self.dimension + "; " + self.data)

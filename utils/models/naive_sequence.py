@@ -1,6 +1,7 @@
 
 import math
 
+from utils.abstract.token import Token
 from utils.abstract.stratagem import Stratagem
 
 class Naive_Sequence(Stratagem):
@@ -29,13 +30,14 @@ class Naive_Sequence(Stratagem):
     # Non-recursive implementation of a partition token generator (simple python sublist algorithm)
     def naive_tokenize(self):
         base = []   
-        lists = [base] 
+        lists = [base]
         for i in range(len(self.sequence)): 
             orig = lists[:] 
             new = self.sequence[i] 
             for j in range(len(lists)): 
-                lists[j] = lists[j] + [new] 
-            lists = orig + lists 
+                lists[j] = lists[j] + [new]
+                current_token = Token(lists[j])
+            lists = orig + lists
         return lists
 
     def context_tokenize(self):
