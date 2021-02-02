@@ -1,7 +1,7 @@
 
-from utils.abstract.unit import Unit
+from utils.abstract.unit import Token
 
-class Operation_Unit(Unit):
+class Operation_Token(Token):
 
     def __init__(self, operation):
         super().__init__()

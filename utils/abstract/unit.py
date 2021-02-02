@@ -1,10 +1,10 @@
 '''
-    This class represents a fundamental unit
+    This class represents a fundamental unit/token
     Parent class for:
         data_unit, logic_unit
 '''
 
-class Unit():
+class Token():
 
     def __init__(self):
         pass

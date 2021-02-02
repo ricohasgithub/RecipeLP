@@ -1,7 +1,7 @@
 
-from utils.abstract.unit import Unit
+from utils.abstract.unit import Token
 
-class Data_Unit(Unit):
+class Data_Token(Token):
 
     def __init__(self, data):
         super().__init__()

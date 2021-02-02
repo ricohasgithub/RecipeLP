@@ -36,10 +36,16 @@ class Naive_Sequence(Stratagem):
             for j in range(len(lists)): 
                 lists[j] = lists[j] + [new] 
             lists = orig + lists 
-        self.tokens = lists
+        return lists
 
     def context_tokenize(self):
         pass
 
     def local_context_tokenize(self):
+        pass
+
+    # Universal token methods
+
+    # Sort the self.tokens data structure by length of sublists/tokens
+    def sort_tokens_length(self):
         pass

@@ -10,7 +10,7 @@ class Heuristic_Sequence(Naive_Sequence):
         super().__init__(sequence)
 
     def tokenize(self):
-        super().naive_tokenize()
+        self.tokens = super().naive_tokenize()
 
     def train(self):
         pass

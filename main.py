@@ -6,8 +6,7 @@ seq = Heuristic_Sequence(n)
 
 seq.tokenize()
 
-for sublist in seq:
-    for token in sublist:
-        print(token)
+for sublist in seq.tokens:
+    print(sublist)
 
 print("A wild success!")
