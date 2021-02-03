@@ -10,9 +10,6 @@ class Heuristic_Sequence(Naive_Sequence):
     def tokenize(self):
         self.tokens = super().naive_tokenize()
 
-    def train(self):
-        pass
-
     def iterate(self):
         pass
 
